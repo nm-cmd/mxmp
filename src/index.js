@@ -1,4 +1,4 @@
-let Nat = {}
+let mx = {}
 
 if ((weex && weex.requireModule) || typeof(__weex_define__) === 'function') {
 	const camera = require('./camera')
@@ -16,81 +16,81 @@ if ((weex && weex.requireModule) || typeof(__weex_define__) === 'function') {
 
 	// camera
 	if (camera) {
-		Nat.camera = camera
+		mx.camera = camera
 	}
 
 	// communication
 	if (communication) {
-		Nat.call = communication.call
-		Nat.sms = communication.sms
-		Nat.mail = communication.mail
+		mx.call = communication.call
+		mx.sms = communication.sms
+		mx.mail = communication.mail
 	}
 
 	// geolocation
 	if (geolocation) {
-		Nat.geolocation = geolocation
+		mx.geolocation = geolocation
 	}
 
 	// media
 	if (media) {
-		Nat.audio = media.audio
-		Nat.image = media.image
-		Nat.video = media.video
+		mx.audio = media.audio
+		mx.image = media.image
+		mx.video = media.video
 	}
 
 	// recorder
 	if (recorder) {
-		Nat.recorder = recorder
+		mx.recorder = recorder
 	}
 
 	// modal
 	if (modal) {
-		Nat.alert = modal.alert
-		Nat.confirm = modal.confirm
-		Nat.prompt = modal.prompt
-		Nat.toast = modal.toast
-		Nat.actionSheet = modal.actionSheet
+		mx.alert = modal.alert
+		mx.confirm = modal.confirm
+		mx.prompt = modal.prompt
+		mx.toast = modal.toast
+		mx.actionSheet = modal.actionSheet
 	}
 
 	// network
 	if (network) {
-		Nat.fetch = network.stream.fetch
-		Nat.download = network.transfer.download
-		Nat.upload = network.transfer.upload
-		Nat.websocket = network.websocket
+		mx.fetch = network.stream.fetch
+		mx.download = network.transfer.download
+		mx.upload = network.transfer.upload
+		mx.websocket = network.websocket
 	}
 
 	// sensor
 	if (sensor) {
-		Nat.accelerometer = sensor.accelerometer
-		Nat.compass = sensor.compass
+		mx.accelerometer = sensor.accelerometer
+		mx.compass = sensor.compass
 	}
 
 	// device
 	if (device) {
-		Nat.device = device.info
-		Nat.battery = device.battery
-		Nat.network = device.network
-		Nat.screen = device.screen
-		Nat.vibrate = device.vibration.vibrate
-		Nat.volume = device.volume
+		mx.device = device.info
+		mx.battery = device.battery
+		mx.network = device.network
+		mx.screen = device.screen
+		mx.vibrate = device.vibration.vibrate
+		mx.volume = device.volume
 	}
 
 	// navigator
 	if (Navigator) {
-		Nat.navigator = Navigator
+		mx.navigator = Navigator
 	}
 
 	// alipay
 	if (alipay) {
-		Nat.alipay = alipay
+		mx.alipay = alipay
 	}
 
 	// wechat
 	if (wechat) {
-		Nat.wechat = wechat
+		mx.wechat = wechat
 	}
 
 }
 
-module.exports = Nat
+module.exports = mx
